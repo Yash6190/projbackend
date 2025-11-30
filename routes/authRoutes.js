@@ -14,7 +14,7 @@ router.post("/refresh", verifyRefreshToken, (req, res) => {
   );
   res.cookie("jtoken", newAccessToken, {
     httpOnly: true,
-    secure: false,
+    secure: true,
     sameSite: "lax",
     maxAge: 15 * 60 * 1000
   });
