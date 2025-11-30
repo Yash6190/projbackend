@@ -15,7 +15,7 @@ router.post("/refresh", verifyRefreshToken, (req, res) => {
   res.cookie("jtoken", newAccessToken, {
     httpOnly: true,
     secure: true,
-    sameSite: "lax",
+    sameSite: "none",
     maxAge: 15 * 60 * 1000
   });
   return res.json({ success: 1, message: "Token refreshed" });
