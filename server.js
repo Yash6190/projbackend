@@ -12,7 +12,7 @@ const port = 9000;
 app.use(cookieParser());
 // Middlewares
 app.use(cors({
-  origin: "https://myprojfrontend-mui6.onrender.com",   // your React origin
+  origin: "https://projfrontend-gaud.onrender.com",   // your React origin
   credentials: true,                 // allow sending cookies
 }));
 
