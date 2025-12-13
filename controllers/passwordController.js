@@ -35,7 +35,7 @@ exports.forgotPassword = async (req, res) => {
       html: `
         Dear ${result.name},<br/><br/>
         Click on the following link to reset your password:<br/><br/>
-        <a href='http://localhost:3000/resetpassword?code=${passtoken}'>
+        <a href='https://projfrontend-98eb.onrender.com/resetpassword?code=${passtoken}'>
             Reset Password
         </a><br/><br/>
         This link will expire in 15 minutes.`
